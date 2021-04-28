@@ -1,5 +1,6 @@
 import React from 'react'
 import Ava from './images/Max_.png'
+import Posts from "./posts/Posts";
 
 function Profile(){
     return(
@@ -8,15 +9,7 @@ function Profile(){
                 <img src={Ava}/>
                 <p>Max Caulfield</p>
             </div>
-            <div className='posts'>
-                <input placeholder='enter the post'/>
-                <button>Add a post</button>
-                <div className='post'>
-                    <img src={Ava}/>
-                    <span>Max Caulfield</span>
-                    <p>Some text</p>
-                </div>
-            </div>
+            <Posts/>
         </div>
     )
 }
